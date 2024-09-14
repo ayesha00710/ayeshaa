@@ -1,0 +1,212 @@
+
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:rgb(228, 228, 228) ;
+  z-index: 100;
+}
+
+.left-side {
+  
+ 
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+.humburger {
+ height: 24px;
+ margin-left: 24px;
+ margin-right: 24px;
+}
+.yticon {
+  height: 20px;
+}
+
+.middle-side {
+ 
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+   flex: 1;
+   height: 36px;
+   padding-left: 10px;
+   font-size: 16px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(192, 192, 192);
+   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0px;
+}
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+
+}
+.search-butt {
+  width: 66px; 
+  height: 40px;
+  background-color: rgb(245, 245, 245);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  position: relative
+  }
+
+  .voice-search , .search-butt , .upload-icon-container , .notification-icon-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+  .search-butt .serach-hover {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+  }
+
+  .voice-search .serach-hover {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .upload-icon-container .serach-hover {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .notification-icon-container .serach-hover {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .search-butt:hover .serach-hover {
+    opacity: 1;
+  }
+  .voice-search:hover .serach-hover {
+    opacity: 1;
+  }
+  .upload-icon-container:hover .serach-hover {
+    opacity: 1;
+  }
+  .notification-icon-container:hover .serach-hover {
+    opacity: 1;
+  }
+
+  .search-icon {
+    height: 25px;
+    margin-top: 4px;
+  }
+.voice-search {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px ;
+  margin-left: 10px;
+  border: none;
+}
+.voice-icon {
+  height: 24px;
+  margin-top: 4px;
+}
+
+.right-side {
+  width: 189px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0px;
+}
+
+.create {
+ height: 24px;
+}
+
+.ytapp {
+  height: 24px;
+}
+
+.notification {
+  height: 24px;
+}
+
+.profile-picc {
+  height: 32px;
+  border-radius: 16px;
+}
+.notification-count {
+  position: absolute;
+  background-color: rgb(201, 0, 0);
+  color: white;
+  top: -5px;
+  right: -5px;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  font-weight: 500px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
