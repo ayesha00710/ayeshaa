@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Practice</title>
+    <style>
+      div {
+  font-family: Arial;
+}
+
+.container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  width: 300px;
+  border-radius: 6px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.notifications {
+  background-color: rgb(49, 109, 245);
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.complete-box {
+  background-color: rgb(150, 82, 150);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.Home-p {
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.d-button {
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  margin-right: 5px;
+}
+.do-button {
+  color: white;
+  background-color: rgb(150, 82, 150);
+  border: none;
+
+}
+.search-t {
+  width: 350px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+.complete-oliver {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.oliver {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.follow-button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.subtitle {
+  color: rgb(150, 150, 150);
+  margin-bottom: 5px;
+}
+.popular {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+
+}
+.info {
+  width: 200px;
+}
+p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.text-div {
+  color: gray;
+}
+.text-p {
+  color: grey;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto, Arial;
+}
+    </style>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="display: flex;
+     flex-direction: row;">
+      <div style="
+        background-color: lightblue;"
+        >
+        div1 text
+      </div>
+      <div style="background-color: lightpink;">
+        div2 <P>text</P>
+      </div>
+    </div>
+<div>
+      <div style="display: flex;
+      margin-top: 30px;
+      flex-direction: row;">
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+        <div style="background-color: lightpink;
+        flex: 1">
+          flex: 1
+        </div>
+    </div>
+
+    <div>
+      <div style="display: flex;
+      margin-top: 30px;
+      flex-direction: row;">
+        <div style="
+          background-color: lightblue;
+          flex: 1;"
+          >
+          flex: 1
+        </div>
+        <div style="background-color: lightpink;
+        width: 100px">
+          100px
+        </div>
+        <div style="
+          background-color: lightblue;
+          flex: 2;"
+          >
+          flex: 2
+        </div>
+    </div>
+
+    <div>
+      <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      ">
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+        <div style="background-color: lightpink;
+        width: 100px">
+          100px
+        </div>
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+    </div>
+  
+    <div>
+      <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      ">
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+        <div style="background-color: lightpink;
+        width: 100px">
+          100px
+        </div>
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+    </div>
+
+    <div>
+      <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      ">
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+        <div style="background-color: lightpink;
+        width: 100px">
+          100px
+        </div>
+        <div style="
+          background-color: lightblue;
+          width: 100px;"
+          >
+          100px
+        </div>
+    </div>
+    <p>Lessom 12 Exercises-Flexbox</p>
+      <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;">
+        <div style="
+          background-color: lightblue;
+          width: 200px;"
+          >
+          200px
+        </div>
+        <div style="background-color: lightpink;
+        width: 75px">
+          75px
+        </div>
+    </div>
+
+      <div style="margin-top: 30px;
+      display: flex;
+      flex-direction: row;">
+        <div style="
+          background-color: lightblue;
+          width: 50px;"
+          >
+          item1
+        </div>
+        <div style="background-color: lightpink;
+        flex: 1">
+          item2
+        </div>
+        <div style="
+        background-color: lightblue;
+        width: 75px;"
+        >
+        item3
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    ">
+      <div style="
+        background-color: lightpink;
+        width: 40px"
+        >
+        item1
+      </div>
+      <div style="background-color: lightpink;
+      width: 40px">
+        item2
+      </div>
+      <div style="
+      background-color: lightpink;
+      width: 40px"
+      >
+      item3
+    </div>
+    <div style="
+    background-color: lightpink;
+    width: 40px"
+    >
+    item4
+  </div>
+  </div>
+
+
+  <div style="
+  margin-top: 30px;
+  height: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+">
+  <div style="
+    background-color: lightpink;
+    width: 40px
+    "
+    >
+    item1
+  </div>
+  <div style="background-color: lightpink;
+  width: 40px;
+  ">
+    item2
+  </div>
+</div>
+<p>12e</p>
+<div class="container">
+  <div class="flexbox">
+    <div>Home</div>
+    <div class="notifications">14</div>
+  </div>
+  <div class="flexbox">
+    <div>Notifications</div>
+    <div class="notifications">3</div>
+  </div>
+  <div class="flexbox">
+    <div>Messages</div>
+    <div class="notifications">5</div>
+  </div>
+</div>
+
+<p>12f</p>
+<div class="complete-box">
+  <div class="Home-p">Home</div>
+  <div class="Search-bar"><input class="search-t" type="text" placeholder="Search"></div>
+  <div class="d-button"><button class="do-button">Download</button></div>
+</div>
+
+
+<p>12g</p>
+<div class="complete-oliver">
+  <div>
+    <img class="oliver" src="Youtube-Practice/Doraemon-1.jpeg">
+  </div>
+  <div class="info">
+    <p class="title">oliver</p>
+    <p class="subtitle">the cat</p>
+    <p class="popular">Popular</p>
+  </div>
+  <div class="follow-b">
+    <button class="follow-button">Follow</button>
+  </div>
+</div>
+
+
+<div class="complete-oliver">
+  <div>
+    <img class="oliver" src="Youtube-Practice/Nobita.jpg">
+  </div>
+  <div class="info">
+    <p class="title">Mimi</p>
+    <p class="subtitle">Sleepy Cat</p>
+    <p class="popular">Popular</p>
+  </div>
+  <div class="follow-b">
+    <button class="follow-button">Follow</button>
+  </div>
+</div>
+
+
+  <div class="complete-oliver">
+    <div>
+      <img class="oliver" src="Youtube-Practice/doraemonnew.jpg">
+    </div>
+    <div class="info">
+      <p class="title">Rex</p>
+      <p class="subtitle">Happy Building</p>
+      <p class="popular">Popular</p>
+    </div>
+    <div class="follow-b">
+      <button class="follow-button">Follow</button>
+    </div>
+  </div>
+<p>13a</p>
+<div style="
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+height: 40px;">
+  <div style="
+    background-color: lightpink;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;">
+    <div style="
+    background-color: black;
+    color: white;">Item1</div>
+  </div>
+  <div style="background-color: lightblue;
+  width: 200px"
+  >
+  </div>
+</div>
+<p>13b</p>
+<div style="
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+height: 50px;">
+  <div style="
+    background-color: lightpink;
+    width: 100px;
+    ">
+  </div>
+  <div style="background-color: lightblue;
+  width: 200px;"
+  >
+  <div>row1</div>
+  <div style="display: flex;
+  justify-content: space-between;">
+  <div style="background-color: black;
+  color: white;">row2</div>
+  <div style="background-color: black;
+  color: white;">row2</div>
+  </div>
+ </div>
+</div>
+<P>13c</P>
+<div style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+width: 420px;
+height: 100px;
+padding-bottom: 12px;
+
+
+">
+<div class="text-div"><p class="text-p">All INBOXES</p></div>
+<div style=" display: flex;
+margin-left: 10px;
+">
+  <div>
+    <img class="oliver" src="Youtube-Practice/Doraemon-1.jpeg">
+  </div>
+  <div>
+    <div style="display: flex;
+    align-items: center;
+    justify-content: space-between
+    ">
+      <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 18px;">Chewy Promotions</p></div>
+    <div style="color: grey;
+    margin-bottom: 4px;">4:58 PM</div>
+    </div>
+    <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    margin-bottom: 2px;">Biggest sales of the year!</p></div>
+    <div><p style="font-family: Roboto, Arial;
+    color: grey;
+    ">Hey there! We're writing to tell you about our...</p></div>
+  </div>
+ </div>
+</div>
+
+
+<p style="margin-top: 10px;
+margin-bottom: 20px;">13d</p>
+
+<div style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+width: 420px;
+padding-bottom: 12px;
+">
+<div class="text-div"><p class="text-p">All INBOXES</p></div>
+
+<div style=" display: flex;
+margin-left: 10px;
+margin-bottom: 12px;
+">
+  <div>
+    <img class="oliver" src="Youtube-Practice/Doraemon-1.jpeg">
+  </div>
+  <div>
+    <div style="display: flex;
+    align-items: center;
+    justify-content: space-between
+    ">
+      <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 18px;">Chewy Promotions</p></div>
+    <div style="color: grey;
+    margin-bottom: 4px;">4:58 PM</div>
+    </div>
+    <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    margin-bottom: 2px;">Biggest sales of the year!</p></div>
+    <div><p style="font-family: Roboto, Arial;
+    color: grey;
+    ">Hey there! We're writing to tell you about our...</p></div>
+  </div>
+ </div>
+
+ <div style=" display: flex;
+margin-left: 10px;
+margin-bottom: 12px;
+">
+  <div>
+    <img class="oliver" src="Youtube-Practice/Nobita.jpg">
+  </div>
+  <div>
+    <div style="display: flex;
+    align-items: center;
+    justify-content: space-between
+    ">
+      <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 18px;">Best Buy</p></div>
+    <div style="color: grey;
+    margin-bottom: 4px;">12:32 PM</div>
+    </div>
+    <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    margin-bottom: 2px;">Your Best Buy eReceipt</p></div>
+    <div><p style="font-family: Roboto, Arial;
+    color: grey;
+    ">Thank you for shopping at Best Buy, here is...</p></div>
+  </div>
+ </div>
+ <div style=" display: flex;
+margin-left: 10px;
+">
+  <div>
+    <img class="oliver" src="Youtube-Practice/doraemonnew.jpg">
+  </div>
+  <div>
+    <div style="display: flex;
+    align-items: center;
+    justify-content: space-between
+    ">
+      <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 18px;">Netflix</p></div>
+    <div style="color: grey;
+    margin-bottom: 4px;">9:00 AM</div>
+    </div>
+    <div><p style="font-family: Roboto, Arial;
+    font-weight: bold;
+    margin-bottom: 2px;">Here's what's coming soon to Netflix</p></div>
+    <div><p style="font-family: Roboto, Arial;
+    color: grey;
+    ">Brand new movies and shows, old favourites...</p></div>
+  </div>
+ </div>
+</div>
+<p style="margin-bottom: 20px;
+margin-top: 20px;">13f</p>
+<div style="display: flex;
+width: 450px;">
+<div>
+  <img class="oliver" src="Youtube-Practice/Doraemon-1.jpeg">
+</div>
+<div>
+  <div><p style="color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial;">supersimple.dev <stan style="color: grey;">@SuperSimpleDev</stan></p></div>
+  <div style="margin-bottom: 15px;
+  font-family: Arial;
+  margin-top: 6px;">What is backend web development? A complete overview. New video is up! </div>
+  <div style="box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 100px;
+  display: flex;">
+    <div style="width: 100px;
+
+    background-color: rgb(223, 220, 220);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    "></div>
+    <div style="margin-top: 10px;
+    margin-left: 10px;
+  ">
+      <div style="
+      color: gray;
+      margin-bottom: 7px;">youtube.com</div>
+      <div style="width: 250px;
+      font-family: Arial;
+      line-height: 22px;">
+        Backend web development - a complete overview (2021)
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+
+
+  </body>
+</html>
